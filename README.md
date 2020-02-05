@@ -3,7 +3,8 @@
 
 A página calcula e gera o gráfico de acordo com o total de cada opção.
 
-![](imagens/pagina.png)
+![pagina](https://user-images.githubusercontent.com/54513989/73824814-9581ab80-47d9-11ea-8713-fd14b6688b36.png)
+
 
 ## Meta
 
