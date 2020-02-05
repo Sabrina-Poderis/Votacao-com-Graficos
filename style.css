@@ -1,0 +1,124 @@
+.texto-vermelho{
+    color: #FF5576;
+}
+
+.texto-roxo{
+    color: #755DA5
+}
+
+.texto-amarelo{
+    color: #FFCF00;
+}
+
+#barraMelancia{
+    background-color: #FF5576;
+}
+
+#barraUva{
+    background-color: #755DA5;
+}
+
+#BarraBanana{
+    background-color: #FFCF00;
+}
+
+.container-grafico, .container-resetar, .container-opcao{
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow:  0px 3px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.75);
+}
+
+html, body, main{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-titulo{
+    background-color: #FF5576;
+    color: #FFF;
+    padding: 10px;
+}
+
+.container-voto{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.container-opcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 200px;;
+    width: 30%;
+    background-color: #fff;
+}
+
+.container-opcao img{
+    height: 100px;
+    width: 100px;
+}
+
+.container-bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    margin: 0px 50px;
+}
+
+.container-resetar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:20%;
+    background-color: #fff;
+}
+
+.container-resetar img{
+    height: 100px;
+    width: 100px;
+}
+
+.container-grafico{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.container-resetar, .container-opcao{
+    cursor: pointer;
+}
+
+.container-grafico-titulo{
+    display: flex;
+}
+
+.container-grafico h2{
+    width: 100px;
+    margin-right: 100px;
+}
+
+.container-barras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#barraMelancia, #barraUva, #BarraBanana{
+    height: 40px;
+    width: 1px;
+    transition: 1s;
+}

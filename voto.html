@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Votação com Gráficos</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    </head>
+
+    <body>
+        <main>
+            <div class="container-titulo">
+                <h1>Olá, Escolha uma Fruta!</h1>
+            </div>
+            
+            <div class="container-voto">
+                <div class="container-opcao texto-vermelho" onclick="votarMelancia()">
+                    <h2>Melancia: <span id="votoMelancia">0</span></h2>
+                    <img src="imagens/melancia.png"/>
+                </div>
+                <div class="container-opcao texto-roxo" onclick="votarUva()">
+                    <h2>Uva: <span id="votoUva">0</span></h2>
+                    <img src="imagens/uvas.png"/>
+                </div>
+                <div class="container-opcao texto-amarelo" onclick="votarBanana()">
+                    <h2>Banana: <span id="votoBanana">0</span></h2>
+                    <img src="imagens/banana.png"/>
+                </div>
+            </div>
+           
+            <div class="container-bottom">
+                <div class="container-resetar" onclick="resetar()">
+                    <img src="imagens/atualizar.png"/>
+                </div>
+                
+                <div class="container-grafico">
+                    <div class="container-barras">
+                        <div class="container-grafico-titulo">
+                            <h2 class="texto-vermelho">Melancia</h2>
+                            <div id="barraMelancia"></div> 
+                        </div>                 
+                        <span id="porcMelancia" class="texto-vermelho">0%</span>
+                    </div>
+                    
+                    <div class="container-barras">
+                        <div class="container-grafico-titulo">
+                            <h2 class="texto-roxo">Uva</h2>
+                            <div id="barraUva"></div>
+                        </div>
+                        <span id="porcUva" class="texto-roxo">0%</span>
+                    </div>
+                    
+                    <div class="container-barras">
+                        <div class="container-grafico-titulo">
+                            <h2 class="texto-amarelo">Banana</h2>
+                            <div id="barraBanana"></div>
+                        </div>
+                        <span id="porcBanana" class="texto-amarelo">0%</span>
+                    </div>
+                    
+                </div>        
+            </div>
+        </main>
+        <script type="text/javascript" src="js/main.js"></script>        
+    </body>
+</html>
